@@ -1,0 +1,55 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.panel > * {
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel > *:first-child {
+  transform: translate(-100%);
+}
+
+.panel > *:last-child {
+  transform: translate(100%);
+}
+
+.panel.open-active > *:first-child {
+  transform: translate(0);
+}
+
+.panel.open-active > *:last-child {
+  transform: translate(0);
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.panel1 {
+  background-image: url(https://unsplash.it/1500/1500/?image=1081);
+}
+
+.panel2 {
+  background: url(https://images.unsplash.com/photo-1507750882922-a638b852634b?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=1977f67033a1b946f3d6fd5f952cda2c);
+}
+
+.panel3 {
+  background: url(https://images.unsplash.com/photo-1502301197179-65228ab57f78?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=ff050cdcff5e11b1a3b59327b0a3830f);
+}
+
+.panel4 {
+  background-image: url(https://unsplash.it/1500/1500/?image=1048);
+}
+
+.panel5 {
+  background: url(https://images.unsplash.com/photo-1466149138309-17bdf50dfd5f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&s=58a91c23efccf8103cf2f9648b886006);
+}
+
+
